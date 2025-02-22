@@ -1,0 +1,198 @@
+/*
+Theme Name: VP Theme
+Theme URI: https://example.com/vp-theme
+Author: 博文科技
+Author URI: https://example.com
+Description: 一个功能强大的WordPress主题
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: vp-theme
+*/
+
+/* 全局变量 */
+:root {
+    --theme-color: #2163e8;
+    --dark-color: #1b1d1f;
+    --light-bg: #f8f9fa;
+    --border-color: #eee;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #666;
+    background: #f4f4f4;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--theme-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 头部样式 */
+.site-header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.site-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.main-navigation {
+    margin: 20px 0;
+}
+
+.main-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-navigation li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* 文章样式 */
+.entry-title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.entry-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.entry-content {
+    margin-bottom: 30px;
+}
+
+.entry-footer {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 20px;
+    color: #666;
+}
+
+/* 归档页面样式 */
+.archive-header {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 404页面样式 */
+.error-404 {
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* 评论样式 */
+.comments-area {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* 分页导航 */
+.pagination {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.pagination .nav-links {
+    display: inline-block;
+}
+
+.pagination .page-numbers {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+}
+
+.pagination .current {
+    background: #f8f9fa;
+}
+
+/* 文章卡片样式 */
+.post-card {
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-3px);
+}
+
+.post-thumbnail {
+    position: relative;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.post-content {
+    padding: 20px;
+}
+
+/* 侧边栏样式 */
+.widget {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.widget-title {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* 按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background: var(--theme-color);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+} 
