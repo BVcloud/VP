@@ -34,13 +34,13 @@
                                             <i class="fas fa-folder"></i>
                                             <?php the_category(', '); ?>
                                         </span>
-                                        <?php if (get_theme_mod('show_post_views', true)) : ?>
+                                        <?php if (function_exists('get_post_views')) : ?>
                                             <span class="meta-item">
                                                 <i class="fas fa-eye"></i>
                                                 <?php echo get_post_views(get_the_ID()); ?>
                                             </span>
                                         <?php endif; ?>
-                                        <?php if (get_theme_mod('show_post_likes', true)) : ?>
+                                        <?php if (function_exists('get_post_likes')) : ?>
                                             <span class="meta-item">
                                                 <i class="fas fa-heart"></i>
                                                 <?php echo get_post_likes(get_the_ID()); ?>

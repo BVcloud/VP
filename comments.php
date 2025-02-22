@@ -76,4 +76,7 @@ if (post_password_required()) {
         )
     ));
     ?>
+
+    <div class="geetest-verify" id="comment-geetest"></div>
+    <?php VP_Geetest::instance()->init_verify('#comment-geetest'); ?>
 </div> 
